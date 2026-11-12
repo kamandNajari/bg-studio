@@ -160,9 +160,5 @@ GitHub: [@kamandNajari](https://github.com/kamandNajari)
 ---
 
 <p align="center">
-  ⭐ If you like this project, consider giving it a star!
-</p>
-
-<p align="center">
   <b>Thank you for your support and for checking out BG Studio! 💜</b>
 </p>
