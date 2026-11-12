@@ -6,7 +6,7 @@ from rembg import remove
 
 st.set_page_config(page_title="BG Studio", page_icon="✨", layout="centered")
 
-# ---------- Styling ----------
+
 st.markdown(
     """
     <style>
@@ -133,7 +133,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# ---------- Header ----------
+
 st.markdown('<div class="hero-title">BG Studio ✨</div>', unsafe_allow_html=True)
 st.markdown(
     '<div class="hero-sub">Remove the background from your photo and put yourself anywhere.</div>',
@@ -154,7 +154,7 @@ def step(number: int, text: str) -> None:
     )
 
 
-# ---------- Step 1 ----------
+
 step(1, "Upload your photo")
 photo_file = st.file_uploader(
     "Drag and drop your photo here",
@@ -173,7 +173,7 @@ if photo_file:
     cutout.save(buf, format="PNG")
     st.download_button("⬇ Download transparent PNG", buf.getvalue(), "cutout.png", "image/png")
 
-    # ---------- Step 3 ----------
+    
     step(3, "Choose a new background")
     bg_file = st.file_uploader(
         "Drag and drop a background image here",
